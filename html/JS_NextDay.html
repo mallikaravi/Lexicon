@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</head>
+
+<body>
+    <p id="date"></p>
+    <button style="margin: 4%;" type="button" id="btn1" name="btn1" value="Click Me" onclick="on_click()" />
+</body>
+<script>
+    function on_click() {
+        let next_date = find_next_date(['2016', '9', '30']);
+        document.getElementById("date").innerHTML = "nextdate of (['2016', '9', '30'])=" + next_date
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</html>

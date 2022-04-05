@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</head>
+
+<body>
+    <h2>Find distance between two points</h2>
+    <p id="Distance_1"> </p>
+    <p id="Distance_2"></p>
+</body>
+<script>
+    let str_elements_arr = ['2', '4', '5', '0']
+    point_arr = prepare_point_objects(str_elements_arr);
+    let distance = find_distance(point_arr[0], point_arr[1]);
+
+    document.getElementById("Distance_1").innerHTML = "distance of ['2', '4', '5', '0'] =" + distance
+
+    str_elements_arr = ['2.34', '15.66', '-13.55', '-2.9985']
+
+    document.getElementById("Distance_2").innerHTML = "distance of ['2.34', '15.66', '-13.55', '-2.9985'] =" + distance
+</script>
+
+
+
+
+
+</html>

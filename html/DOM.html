@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <script>
+        //getElementById()
+        function getCube() {
+            var number = document.getElementById("number").value;
+            alert(number * number * number);
+        }
+
+        function totalelements() {
+            var genders = document.getElementsByName("gender");
+            alert("Total genders:" + genders.length);
+        }
+
+        function countH3() {
+            var h3_count = document.getElementsByTagName("h3");
+            alert("total count ofh3:" + h3_count);
+        }
+
+        function countH2() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <!--write(),writeln(),getElememtById(),getElementsByClassName(),getElementsbyName(),getElementsByTagName()-->
+    <form>
+        Enter no:<input type="text" id="number" name="number">
+        <input type="Button" value="cube" onclick="getCube()">
+    </form>
+    <!--getElementsByName-->
+    <form>
+        Male:<input type="radio" name="gender" value="male"> Female:
+        <input type="radio" name="gender" value="female">
+        <input type="Button" value="Total Genders" onclick="totalelements()">
+    </form>
+    <!--getElementsByTagName()-->
+    <h2> I am h2</h2>
+    <h2> I am h2</h2>
+    <h3> I am h3</h3>
+    <h3> I am h3</h3>
+    <button type="button" onclick="countH2()"> CountH2</button>
+    <button type="button" onclick="countH3()"> CountH3</button>
+    <!--getElementsbyClasssName()-->
+    <h2>HTML DOM</h2>
+    <p class="demo1">Hello world</p>
+    <p class="demo1">Hello world Java</p>
+    <p id="demo"></p>
+</body>
+<script>
+    //getElementsByClassName()
+    const x = document.getElementsByClassName("demo1");
+    document.getElementById("demo").innerHTML = "the content of first p is:" + x[0].innerHTML;
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").id = "testing";
+
+    document.getElementById("testing").style.color = "green";
+</script>
+
+</html>

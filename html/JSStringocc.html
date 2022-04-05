@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function findOccurence(word, letter) {
+            let letter_occur = 0
+            const char_array = word.split('');
+            for (let i = 0; i < char_array.length; i++) {
+                if (char_array[i] == letter) {
+                    letter_occur++
+                }
+            }
+            return letter_occur;
+        }
+
+        //Methode 1:
+        let str_elements_arr = ['hello', 'l']
+        let no_occurences = findOccurence(str_elements_arr[0], str_elements_arr[1])
+        console.log(no_occurences);
+
+        //Methode 2:
+        //console.log(str_elements_arr[0].search(str_elements_arr[1]));
+
+        //Methode 1:
+        str_elements_arr = ['panther', 'n']
+        no_occurences = findOccurence(str_elements_arr[0], str_elements_arr[1])
+        console.log(no_occurences);
+        //Methode 2:
+        //console.log(str_elements_arr[0].search(str_elements_arr[1]));
+    </script>
+</body>
+
+</html>

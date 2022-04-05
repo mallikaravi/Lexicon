@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</head>
+
+<body>
+    <h2>Find area of rectangle</h2>
+    <p id="Area_1"> </p>
+    <p id="Area_2"></p>
+
+
+    <script>
+        let rec_area = find_min_area(['2', '4', '5', '3']);
+        document.getElementById("Area_1").innerHTML = "Area of ['2', '4', '5', '3'] = " + rec_area
+
+        rec_area = find_min_area(['13', '2', '5', '8']);
+        document.getElementById("Area_2").innerHTML = "Area of ['13', '2', '5', '8'] = " + rec_area
+    </script>
+
+</body>
+
+
+
+</html>

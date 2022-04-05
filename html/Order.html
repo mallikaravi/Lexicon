@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/template.css" />
+    <title>Beer Store</title>
+</head>
+
+<nav>
+    <div class="topnav">
+        <a class="logo" href="BeerStore.html"> <img src="images/logo.png" /> </a>
+        <a href="BeerStore.html"> Home </a>
+        <a href="Allbeers.html"> See All beers</a>
+        <a class="active" href="order.html"> Order a beer</a>
+        <a class="right" href="register.html"> Register</a>
+        <a class="right" href="login.html"> Login</a>
+    </div>
+</nav>
+<main>
+    <center>
+        <h1>Order a beer </h1>
+        <div style="display: block;">
+            <label for="Brand">Brand</label>
+            </br>
+            </br>
+
+            <select name="Brand" id="Brand">
+                <option value="Selection Disabled">Select a Brand</option>
+                <option value="Carlsberg">carlsberg</option>
+                <option value="Heinken">Heinken</option>
+                <option value="CoronaExtra">Corona Extra</option>
+                
+              </select>
+            <br/>
+            <br/>
+
+            <label for="Quantity">Quantity</label>
+            <br/>
+            <br/>
+            <input placeholder="Enter amount of beers(1-15)" type="text">
+            <br/>
+            <br/>
+            <label for="Destination">Destination</label>
+            <br/>
+            <br/>
+            <select name="Destination" id="Destination">
+            <option value="Selection Disabled">Select a destination</option>
+            <option value="kista">kista</option>
+            <option value="Bromma">Bromma</option>
+            <option value="Solna">Solna</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="Birthdate"> Enter your birthdate</label>
+            <br/>
+            <br/>
+
+            <input type="date" id="birthday" name="birthday">
+            <br/>
+            <br/>
+            <label for=" opinion">Got an opinion,comment,recommendation?Share it with us!</label>
+            <br/>
+            <br/>
+            <input placeholder="Share your opinion with us!" type="text">
+        </div>
+
+    </center>
+</main>
+
+</body>
+<footer>
+
+    <p><em>&copy;2020 &ndash;Beer Store</em></p>
+</footer>
+
+
+</html>

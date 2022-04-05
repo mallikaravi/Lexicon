@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</head>
+
+<body>
+    <h2>Find the vat of array of string numbers.</h2>
+    <p id="Example_1"> </p>
+    <p id="Example_2"></p>
+    <p id="Example_3"></p>
+
+    <p id="Example_4"> </p>
+    <p id="Example_5"></p>
+    <p id="Example_6"></p>
+
+    <script>
+        let sum_vat_numbers = add_vat_numbers(['1.20', '2.60', '3.50']);
+        document.getElementById("Example_1").innerHTML = "sum of ['1.20', '2.60', '3.50'] = " + sum_vat_numbers
+        document.getElementById("Example_2").innerHTML = "vat of ['1.20', '2.60', '3.50'] = " + sum_vat_numbers * 0.2
+        document.getElementById("Example_3").innerHTML = "total of ['1.20', '2.60', '3.50'] = " + sum_vat_numbers * 1.2
+
+        sum_vat_numbers = add_vat_numbers(['3.12', '5', '18', '19.24', '1953.2262', '0.001564', '1.1445']);
+
+        document.getElementById("Example_4").innerHTML = "sum of ['3.12', '5', '18', '19.24', '1953.2262', '0.001564', '1.1445'])= " + sum_vat_numbers
+        document.getElementById("Example_5").innerHTML = "sum of ['3.12', '5', '18', '19.24', '1953.2262', '0.001564', '1.1445'])= " + sum_vat_numbers * 0.2
+        document.getElementById("Example_6").innerHTML = "sum of ['3.12', '5', '18', '19.24', '1953.2262', '0.001564', '1.1445'])= " + sum_vat_numbers * 1.2
+    </script>
+</body>
+
+
+</html>

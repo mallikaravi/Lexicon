@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>JS introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script>
+        function display() {
+            console.log("banana");
+
+            document.getElementsByClassName("xyz")[0].innerHTML = "Hello";
+        }
+
+        function msg() {
+            alert("Hello World");
+        }
+    </script>
+</head>
+
+<body>
+    <p class="xyz"></p>
+
+
+    <button type="button" name="btn1" value="click me" onclick="display()">click me</button>
+    <button type="button" name="btn2" onclick="msg()">Message</button>
+</body>
+
+</html>

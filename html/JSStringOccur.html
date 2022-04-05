@@ -1,0 +1,25 @@
+<<html>
+
+    <head>
+        <script type="text/javascript" src="js/main.js">
+        </script>
+    </head>
+
+    <body>
+        <h2>Occurence of letter</h2>
+        <p id="Occu_1"> </p>
+        <p id="Occu_2"> </p>
+    </body>
+
+    <script>
+        let str_elements_arr = ['hello', 'l']
+        let no_occurences = findOccurence(str_elements_arr[0], str_elements_arr[1])
+        document.getElementById("Occu_1").innerHTML = "Occurence of (['hello', 'l'])=" + no_occurences
+
+        str_elements_arr = ['panther', 'n']
+        no_occurences = findOccurence(str_elements_arr[0], str_elements_arr[1])
+        document.getElementById("Occu_2").innerHTML = "Occurence of (['panther', 'n'])=" + no_occurences
+    </script>
+
+
+    </html>

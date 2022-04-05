@@ -1,0 +1,32 @@
+body {
+    Margin: 0px;
+    Padding: 0px;
+    background-color: #CCCCCC;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    background-color: #444;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    /*no design will be displayed*/
+}
+
+nav li {
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
+    padding: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    /*no underline will be displayed*/
+    color: #ffffff;
+}

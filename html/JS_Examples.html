@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function add(x, y) {
+            return parseFloat(x) + y;
+
+        }
+        let str_elements_arr = ['2', '3', '4']
+        let sum = 0;
+        for (let i = 0; i < str_elements_arr.length; i++) {
+            sum = add(str_elements_arr[i], sum)
+
+        }
+        console.log(sum)
+        let str_elements_arr1 = ['1.5', '1.5', '-1']
+        let dsum = 0;
+        for (let i = 0; i < str_elements_arr1.length; i++) {
+            dsum = add(str_elements_arr1[i], dsum)
+        }
+        console.log(dsum)
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

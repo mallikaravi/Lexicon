@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/JQuery_traversing.js"></script>
+</head>
+
+<body>
+    <div class="a1">
+        <div>great grand parent</div>
+        <ul>
+            ul grand parent
+            <li>
+                parent
+                <span>child</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        divmain
+        <p id="p1">child
+            <p>grandchild</p>
+        </p>
+    </div>
+    <div>
+        <p>p1</p>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+    </div>
+    <!--filtering-->
+    <div class="x1">
+        <p>p1</p>
+        <h1>h1</h1>
+    </div>
+    <div class="x1">
+        <p>p1</p>
+        <h1>h1</h1>
+    </div>
+    <div class="x1">
+        <p>p1</p>
+        <h1>h1</h1>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $("span").parentsUntil("#div2").css({
+            "color": "red",
+            "border": "3px,solid red"
+        })
+        $("#p1").children().css({
+            "color": "green",
+            "border": "6px,solid green"
+        })
+        $("h2").nextUntil("h5").css({
+            "color": "blue ",
+            "border": "6px solid blue"
+
+        })
+        $(".x1").eq(1).css({
+            "background-color": "blue ",
+
+
+        })
+
+    });
+</script>
+
+</html>

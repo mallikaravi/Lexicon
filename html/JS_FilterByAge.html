@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+
+<head>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</head>
+
+<body>
+    <h2>filter by age</h2>
+    <p id="Age"> </p>
+</body>
+<script>
+    let person_details = ['12', 'John', '15', 'Alfred', '1']
+    persons_arr = prepare_person_objects(person_details);
+    let person = filterByMinAge(parseInt(person_details[0]), persons_arr);
+
+    document.getElementById("Age").innerHTML = "filter age of ['12', 'John', '15', 'Alfred', '1']=" + person.age + "- " + person.name
+</script>
