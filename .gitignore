@@ -1,0 +1,9 @@
+*.wt
+MongoDB/LICENSE-Community.txt
+MongoDB/MPL-2
+MongoDB/README
+MongoDB/THIRD-PARTY-NOTICES
+MongoDB/bin/
+MongoDB/data/*.*
+MongoDB/data/*
+MongoDB/log/
