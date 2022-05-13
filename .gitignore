@@ -7,3 +7,6 @@ MongoDB/bin/
 MongoDB/data/*.*
 MongoDB/data/*
 MongoDB/log/
+**/__pycache__/
+
+

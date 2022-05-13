@@ -1,0 +1,32 @@
+{
+    "workbench.editor.untitled.hint": "hidden",
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "html.format.endWithNewline": true,
+    "workbench.editorAssociations": {
+        "*.sqlite3": "sqlite-viewer.view"
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.autoSave": "afterDelay",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.preserveNewLines": false,
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html",
+        "html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "*.ejs": "html",
+        "*.js": "html"
+    }
+}
