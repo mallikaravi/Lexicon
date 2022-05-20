@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Update Page</title>
+
+{% endblock %}
+
+{% block body %}
+
+<h2>Update Task</h2>
+<div class = "form">
+    <form action="/update/{{ task_to_update.id }}" method = "POST">
+        <input type="text" name ="id" id = "id" value ="{{ task_to_update.id }}">
+        <input type="text" name ="name" id = "name" value ="{{ task_to_update.name }}">
+
+        <input type="text" name ="age" id = "age" value ="{{ task_to_update.age }}">
+
+        <input type="text" name ="group" id = "group" value ="{{ task_to_update.group }}">
+
+        <input type="text" name ="collegename" id = "collegename" value ="{{ task_to_update.collegename }}">
+
+        <input type ="submit" value = "Update Task">
+    </form>
+</div>
+
+{% endblock %}

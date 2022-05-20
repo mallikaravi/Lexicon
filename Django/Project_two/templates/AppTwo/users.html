@@ -7,9 +7,9 @@
     </head>
 
     <body>
-        <h1>List of users:</h1>
+        {% comment %} <h1>List of users:</h1> {% endcomment %}
         
-
+{% comment %} 
         {% if user_records%} 
         {% for user in user_records%}
         {{ forloop.counter }} user info
@@ -22,7 +22,12 @@
         {% else %}
         print("No users found")
 
-        {% endif %}
+        {% endif %} {% endcomment %}
+        
+
+
+      
         
     </body>
+
 </html>

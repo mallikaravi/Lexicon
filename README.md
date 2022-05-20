@@ -23,3 +23,47 @@ git push -u origin main
       Do again command 'pip list'
 - Install django with 'pip install django==1.11'
 - Create your project with 'django-admin startproject first_project'
+
+-for the password authentications ,we need to write following commands 
+# pip install bcrypt
+# pip install pillow
+# pip install django[argon2]
+
+
+
+#FlaskEnvironment installation and configurationi
+- Open run as administartor window in cmd
+- Create environemnt with conda for Flask installation.
+      # conda create --name FlaskENV python=3.5'
+
+- Activate the conda environement
+     '# conda activate FlaskEnv'
+ -Check the installed libraries using pip command
+     '# pip list'
+- Run your programm using command
+  # python app.py 
+  #  set FLASK_APP = "file" and type
+  #  FLASK run
+- Instead of restarting server always,setup env variable
+
+  # set FLASK_DEBUG =1
+
+- create database by using extension by command
+  # python
+  # from filename import db
+  # db.create_all() 
+
+-to go to database shell
+   # sqlite3 database.db 
+   # select * from user
+
+- when doing login pages we need to install 
+  # pip install Flask_SQLAlchemy
+  # pip install Flask_Bootstrap
+  # pip install flask_wtf
+  # pip insatll email_validator 
+  # pip install flask_login 
+
+- 
+
+

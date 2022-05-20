@@ -1,8 +1,11 @@
-from socket import fromshare
-from django import forms
 
-class FormName(forms.Form):
-    name = forms.CharField()
-    email= forms.EmailField()
-    address =forms.CharField(widget=forms.addressarea)
-    phonenumber=forms.IntegerField()
+from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+
+
+class signUpForm(UserCreationForm):
+    
+     class Meta:
+           model = User
+           fields = ('username','first_name','last_name','email','password1' )

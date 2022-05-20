@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Index Page</title>
+
+{% endblock %}
+
+{% block body %}
+
+<h2>Student Information</h2>
+<div class = "content">
+    <div class ="container">
+        
+    <table>
+    
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Group</th>
+            <th>CollegeName</th>
+
+        </tr>
+        <tr>
+            {% for student in students %}
+            <td>{{ student.id }} </td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.group }}</td>
+            <td>{{ student.collegename }}</td>
+            <td>
+                <a href="/delete/{{ student.id }}">Delete</a><br>
+                <a href="/update/{{ student.id }}">update</a><br>
+           </td>
+
+            
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+    <form action="/index" method = "POST">
+         <label for="id">ID</label>
+        <input type="text" name = "id" id = "id"><br>
+
+        <label for="name">NAME</label>
+        <input type="text" name = "name" id = "name"><br>
+
+        <label for="Age">AGE</label>
+        <input type="text" name = "age" id = "age"><br>
+
+        <label for="Group">GROUP</label>
+        <input type="text" name = "group" id = "group"><br>
+
+        <label for="collegename">COLLEGENAME</label>
+        <input type="text" name = "collegename" id = "collegename"><br>
+
+        <input type= "submit" value = "Add studentinfo">
+
+    
+</form>
+</div>
+
+
+
+</div>
+
+{% endblock %}
