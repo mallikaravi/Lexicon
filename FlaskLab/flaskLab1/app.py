@@ -134,8 +134,8 @@ def login():
         if user:
             if check_password_hash(user.password,form.password.data):
                 login_user(user,remember=form.remember.data)
+                return redirect('/index')
                 
-                return redirect(url_for('dashboard'))
         return '<h1> Invalid username and password </h1>'
         #return '<h1>' + form.username.data + ''+ form.password.data + '</h1>'
     return render_template('login.html',form =form)
